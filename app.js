@@ -2,11 +2,23 @@ window.onload = function() {
     document.getElementById("dateForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission
     
-        // Get the value of the date input field
-        var dateInput = document.getElementById("birthdate").value;
+        // Parse the input date provided by the user
+        var birthdateInput = document.getElementById("birthdate").value;
+        var birthdate = new Date(birthdateInput);
     
-        // Display the value
-        var output = document.getElementById("output");
-        output.textContent = "Selected date: " + dateInput;
+        // Get the current date
+        var currentDate = new Date();
+        
+        // Calculate the difference between the current date and the input date
+        var ageDiff = currentDate - birthdate;
+        
+        // Calculate age in years, months, and days
+        var ageDate = new Date(ageDiff); // Convert difference to a Date object
+        var years = ageDate.getUTCFullYear() - 1970;
+        var months = ageDate.getUTCMonth();
+        var days = ageDate.getUTCDate() - 1; // Subtract 1 because getUTCDate() starts from 1
+        
+        // Display the calculated age
+        document.getElementById("output").textContent = "Your age is: " + years + " years, " + months + " months, and " + days + " days.";
     });
 };
