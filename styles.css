@@ -15,6 +15,10 @@ body {
     color: #333;
 }
 
+section {
+    margin: auto;
+}
+
 #dateForm {
     display: flex;
     flex-direction: column;
