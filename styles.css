@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5%;
     background-color: #CEEC97;
     font-family: Arial, sans-serif;
     font-size: 16px;
