@@ -18,6 +18,11 @@ window.onload = function() {
         var months = ageDate.getUTCMonth();
         var days = ageDate.getUTCDate() - 1; // Subtract 1 because getUTCDate() starts from 1
         
+        // Display the output div tags
+        document.getElementById("years").style.display = "inline";
+        document.getElementById("months").style.display = "inline";
+        document.getElementById("days").style.display = "inline";
+
         // Display the calculated age
         document.getElementById("years").innerHTML = years + "<br> years";
         document.getElementById("months").innerHTML = months + "<br> months";
