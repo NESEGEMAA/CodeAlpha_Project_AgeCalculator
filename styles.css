@@ -34,6 +34,7 @@ section {
 }
 
 section > div {
+    display: none;
     background-color: rgba(252, 96, 168, 0.6);
     margin: 2vh;
     padding: 5vh;
