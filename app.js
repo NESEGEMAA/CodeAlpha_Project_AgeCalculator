@@ -19,6 +19,8 @@ window.onload = function() {
         var days = ageDate.getUTCDate() - 1; // Subtract 1 because getUTCDate() starts from 1
         
         // Display the calculated age
-        document.getElementById("output").textContent = "Your age is: " + years + " years, " + months + " months, and " + days + " days.";
+        document.getElementById("years").textContent = years;
+        document.getElementById("months").textContent = months;
+        document.getElementById("days").textContent = days;
     });
 };
