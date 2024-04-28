@@ -32,3 +32,10 @@ section {
     padding: 8vh;
     border-radius: 20px;
 }
+
+section > div {
+    background-color: rgba(252, 96, 168, 0.6);
+    margin: 2vh;
+    padding: 8vh;
+    border-radius: 20px;
+}
