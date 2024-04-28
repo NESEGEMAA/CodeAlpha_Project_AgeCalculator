@@ -26,6 +26,6 @@ window.onload = function() {
         // Display the calculated age
         document.getElementById("years").innerHTML = years + "<br> years";
         document.getElementById("months").innerHTML = months + "<br> months";
-        document.getElementById("days").innerHTML = days + "<br> years";
+        document.getElementById("days").innerHTML = days + "<br> days";
     });
 };
